@@ -1,0 +1,47 @@
+body {background:gray;}
+div.post-photo img {
+ display: inline-block;
+ visibility: hidden;
+ background-color: #DEDFE0;
+ width: 100%;
+}
+
+div.post-photo{
+ background-color: #9FBA74;
+ background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/7f/HariLilamrita_page-146.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+div.post-text { background-color: #F1E7D8; padding-bottom: 1em;
+                font-family: "Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Helvetica,Arial,sans-serif, Kalpurush;}
+div.post-text h3 {margin: 0;padding:0.2em; line-height:2em; font-size:1.5em; background-color: #FDEFC2; font-weight:300;}
+div.post-text h3 small {  line-height: 1em;
+                          background:white;
+                          padding:0.6em 0.8em;
+                          display:inline-block;
+                          margin:0 0.5em;
+                          border-radius:0.3em;
+                          font-size:0.8em; 
+                          color:gray;  }
+div.post-text h3 span {  display:inline-block; margin:0 auto;}
+div.post-text p {  font-size: 1.2em; font-weight:300;}
+div.post-text p span {background:; width: 0.5em; height:0.1em; display:inline-block;}
+div.post-text p span + span {background:; width: 3em;}
+
+  /* Medium Screen */
+  @media only screen and (min-width: 950px) {
+    div.post-photo   {   width: 60%;   float: right;  }
+    div.post-text    {   width: 39%;   float: left;  }
+    div.post-text p  {   margin-left:8%; }
+  }
+  @media only screen and (max-width: 949px) and (min-width: 430px) {
+    div.post-photo   {    margin: 0 auto;   width: 100%;   float: none;  }
+    div.post-text    {    margin: 0 auto;   width: 100%;   float: none;  }
+    div.post-text p  {    margin-left:10%;}
+  }
+  @media only screen and (max-width: 430px) {
+      div.post-text p {   font-size: 80%;  padding:5px;  margin-left:5%; }
+      div.post-text h3 {  font-size: 1em; }
+  }
+
